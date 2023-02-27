@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Table</title>
 	<style type="text/css">
-		table{
+		/* table{
 			margin-left:40%;
 			margin-top:10%;
 			height: 450px;
@@ -22,6 +22,36 @@
 			from{ background-color:purple}
 			to{background-color:red}
 
+		} */
+		.parent{
+			height: 100vh;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* background-color: aqua; */
+
+		}
+		.child{
+			height: 400px;
+			width: 200px;
+			border: 2px;
+			border-radius: 5px;
+			border: dotted;
+		}
+		label{
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			margin-left: 20px;
+			color: rgb(255, 0, 238);
+
+		}
+		button{
+			margin-left: 30px;
+		}
+		input{
+			margin-left: 20px;
 		}
 
 		*{
@@ -44,9 +74,11 @@
 </head>
 <body>
 	
-	<table>
+	<div class="parent">
+
+	<div class="child">
 		
-		<tr><th>
+		<!-- <tr><th>
 		
 			<label>First Name<sup>*</sup></label><br>
 			<input type="text" placeholder="Enter Your First Name"><br></th></tr>
@@ -68,7 +100,23 @@
 		</tr>
 
 	</table>
-</tr>
+</tr> -->
+<label>First Name<sup>*</sup></label><br>
+			<input type="text" placeholder="Enter Your First Name"><br>
+            
+			<label>Last Name<sup>*</sup></label><br>
+			<input type="text" placeholder="Enter Your last Name"><br>
+            
+				<label>Mobile number<sup>*</sup></label><br>
+			<input type="number" placeholder="Enter Your mobile no"><br>
+				<label>Gmail<sup>*</sup></label><br>
+			<input type="gmail" placeholder="Enter Your gmail"><br>
+				<label>Date of Birth<sup>*</sup></label><br>
+			<input type="date" placeholder="Enter Your Date of birth"><br>
+			<label> Gender<sup>*</sup></label><br>
+			<input type="radio" name="gen">Male<input type="radio" name="gen">Female<input type="radio" name="gen">Other<br>
+			<button>Button</button>
+
 
 </body>
 </html>
