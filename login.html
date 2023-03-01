@@ -19,9 +19,10 @@
         .k {
             height: 500px;
             width: 300px;
-            box-shadow: 3px 4px 6px 4px rebeccapurple;
+            box-shadow: 3px 4px 6px 4px rgb(134, 231, 7);
             border-radius: 10px;
-            background-color: rgb(38, 214, 214);
+            /* background-color: rgb(38, 214, 214); */
+            background-image: url("ba.jpg");
         }
 
         h2 {
@@ -77,11 +78,13 @@
         }
 
         input {
-            margin-left: 50px;
+            margin-left: 60px;
             border: 23px 30px rebeccapurple;
             border-radius: 10px;
             height: 25px;
-            background-color: silver;
+            background-color: white;
+            text-align: center;
+
         }
 
         input:hover {
@@ -99,10 +102,16 @@
             margin-left: 120px;
             border-radius: 10px;
             color: tomato;
+            background-color: rgb(197, 185, 181);
         }
 
         button:hover {
             background-color: chartreuse;
+
+        }
+
+        ::placeholder {
+            color: chocolate;
 
         }
     </style>
@@ -112,21 +121,17 @@
     <div class="s">
         <div class="k">
 
-            <h2>Sign up</h2><br><br>
+            <h2>Login</h2> <br><br><br><br><br><br><br><br>
 
-            <input type="text" placeholder="Enter your name"><br><br>
-
-            <input type="Number" placeholder="Enter your Mobile number"><br><br>
+            <input type="email" placeholder="Enter your gmail"><br><br>
 
 
 
-            <input type="text" placeholder="Enter your gmail "><br><br>
 
-            <label for="">Select gender</label><br>
-            <input type="radio" name="gender" value="Male" checked> Male <br>
-            <input type="radio" name="gender" value="female" checked> female <br>
-            <input type="radio" name="gender" value="other" checked> other <br><br>
-            <button> <a href="marksheet.html"> Submit</a></button>
+            <input type="password" placeholder="Enter your password"><br><br><br><br>
+
+
+            <button><a href="marksheet.html">Submit</a> </button>
 
         </div>
     </div>
